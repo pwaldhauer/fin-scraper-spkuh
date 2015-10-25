@@ -21,7 +21,7 @@ var casper = require('casper').create({
         },
     onResourceReceived: function(casper, response) {
         if(response.contentType == 'text/comma-separated-values' && !downloadComplete) {
-            this.download(response.url, 'spk_____rechnung_' + (new Date()).getTime() + '.csv');
+            this.download(response.url, 'crawl_' + (new Date()).getTime() + '.csv');
             downloadComplete = true;
         }
     }

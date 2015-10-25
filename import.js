@@ -32,7 +32,7 @@ var parser = csv.parse({
         }
 
         console.log(params);
-//continue;
+
         request({
             method: 'POST',
             uri: url,
